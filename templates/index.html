@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <head>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/normalize.css') }}">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/weather.css') }}">
+    <link href= 'https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>    
+    <link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src="{{url_for('static', filename='js/vendor/jquery-1.11.3.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/vendor/moment.js')}}"></script>
+	<script src="{{url_for('static', filename='js/skycons.js') }}"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+  </head>
+  <body>
+	  <section>
+          <div id="date">
+          </div>
+          <div id="weather">
+          </div>
+      </section>
+      <div id="greeting">
+      </div>
+      <div id="actionlist">
+      </div>
+	  <script src="{{url_for('static', filename='js/weather.js')}}"></script>
+	  <script src="{{url_for('static', filename='js/greeting.js')}}"></script>
+	  <script src="{{url_for('static', filename='js/actionlist.js')}}"></script>
+	  <script src="{{url_for('static', filename='js/new_weather.js')}}"></script>
+	  <script src="{{url_for('static', filename='js/clock.js')}}"></script>
+
+  </body>
+</html>
+{% endautoescape %}
