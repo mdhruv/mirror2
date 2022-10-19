@@ -123,12 +123,12 @@ canvas {
 }
 
 #date p:first-child{
-    font-size: 5.0em;
+    font-size: 4.5em;
 }
 
 #time {
-    font-size: 6.5em;
-    padding: 10px;
+    font-size: 10.0em;
+    padding: 5 px;
 }
 
 section {
@@ -139,14 +139,14 @@ section {
 }
 
 #actionlistTitle {
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 #actionlist {
     text-align: left;
     font-size: 1.5em;
     position: fixed;
-    top: 35%;
+    top: 45%;
     width: 100%;
     left: 50px;
 }

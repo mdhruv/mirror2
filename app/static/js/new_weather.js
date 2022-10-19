@@ -1,4 +1,4 @@
-const url = 'https://api.openweathermap.org/data/2.5/weather?zip=95050,us&units=imperial&APPID=e944bff942a64a3b2526bf88ad1f3676'
+const url = 'https://api.openweathermap.org/data/2.5/weather?zip=95125,us&units=imperial&APPID=e944bff942a64a3b2526bf88ad1f3676'
 
 var getWeatherData = function() {
 	$.get(url, function(data, status){
@@ -13,7 +13,7 @@ function updateWeather(data) {
     return;
   }
   html = '<canvas id="weather-icon" width="128" height="128"></canvas><h2> '+Math.round(data.main.temp)+'&deg;F</h2>';       
-  html += '<div id="region">Santa Clara, California</div>';
+  html += '<div id="region">San Jose (Willow Glen), California</div>';
   for (var i=0; i<data.weather.length;i++) {
     html += '<div>'+data.weather[i].description.replace(/\b\w/g, l => l.toUpperCase())+'</div>';
   }
